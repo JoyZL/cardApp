@@ -1,0 +1,24 @@
+
+
+<div class="info">
+<p class="greeting">Congratulations {{card.name}}! Here is your card!</p>
+</div>
+
+<div class="options"></div>
+
+<script>
+window.cardImage = "/public/images/{{card.image}}";
+
+$(document).ready(function(){
+
+initRaphael();
+
+var img = paper.image("/public/images/{{card.image}}", 0, -400, 500, 400);
+img.animate({x:0, y:0}, 2000, "bounce");
+
+});
+
+</script>
+
+<div id="canvas" style="width: 500px; height: 400px;"></div>
+

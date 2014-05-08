@@ -1,0 +1,45 @@
+
+<form action='/step4' method='POST' id='step3form'>
+<div class="info">
+<p class="greeting">Hi : {{card.name}}</p>
+<p class="greeting">Two more steps to go!</p>
+<input type='hidden' name='card_id' value='{{card.id}}' />
+</div>
+
+<div class="options">
+<p class="pickOption">Pick one</p>
+<label class="b1">
+<input type='radio' name='subject' value='b1' />
+<img />
+</label>
+
+<label class="b2">
+<input type='radio'  name='subject' value='b2' />
+<img />
+</label>
+
+<label class="b3">
+<input type='radio'  name='subject' value='b3' />
+<img />
+</label>
+
+<button type="submit" class="optionBtn">Select</button>
+</div>
+
+<div id="canvas" style="width: 500px; height: 400px;"></div>
+
+</form>
+
+<script>
+
+$(document).ready(function(){
+
+initRaphael();
+
+showStep3();
+
+});
+
+</script> 
+
+

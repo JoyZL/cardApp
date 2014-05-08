@@ -1,0 +1,394 @@
+
+body{
+	/*background-color: rgb(62, 192, 184);*/
+
+	/*background-color: rgb(255, 255, 255)*/;
+}
+
+#background {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      margin-left: -10px;
+      margin-top: -10px;
+      z-index: 1;
+    }
+
+#innerBox{
+	position: relative;
+	margin: 0 auto;
+	width: 1050px;
+	z-index: 2;
+}
+
+#banner{
+	position: relative;
+	width: 1050px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(62, 192, 184, 0);
+	background-image: url('../images/banner_leftnarrow.png');
+	z-index: 2;
+}
+
+#container{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 850px;
+	min-height: 550px;
+	/*height: auto;
+	overflow: auto;*/
+	clear:none;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-left: 50px;
+	z-index: 2;
+}
+
+#sideBar{
+	float: left;
+	position: relative;
+	width: 150px;
+	min-height: 550px;
+	/*height: auto;*/
+	clear: none;
+	background-color: rgba(88, 87, 75, 0.7);
+	z-index: 2;
+}
+
+#location{
+	font-family: "Garamond";
+	font-size: 16px;
+	color: rgb(88, 87, 75);
+	text-align: center;
+	z-index: 2;
+}
+
+h1{
+	font-family: "Garamond";
+	font-size: 36px;
+	font-weight: lighter;
+	color: #ffffff;
+	text-align: left;
+	display: none;
+	z-index: 2;
+}
+
+p{
+	font-family: "Garamond";
+	font-size: 14px;
+	text-align: center;
+	z-index: 2;
+}
+
+p.pickOption{
+	font-family: "Garamond";
+	font-size: 16px;
+	text-align: left;
+	z-index: 2;
+}
+
+a.link{
+	font-family: "Garamond";
+	font-size: 14px;
+	color: #ffffff;
+	z-index: 2;
+}
+
+a{
+	text-decoration: none;
+	z-index: 2;
+}
+
+li{
+	height: 30px;
+	width: 250px;
+	list-style: none;
+	z-index: 2;
+}
+
+li.cardText{
+	font-family: "Garamond";
+	font-weight: bold;
+	height: 20px;
+	font-size: 14px;
+	color: #58574b;
+	z-index: 2;
+}
+
+ul.resource{
+	text-align: left;
+	margin-left: 300px;
+	z-index: 2;
+}
+
+div.info{
+	width: 850px;
+	height: 80px;
+	margin-top: 30px;
+	font-family: "Garamond";
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 0px;
+	z-index: 2;
+}
+
+p.greeting{
+	font-family: "Garamond";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	z-index: 2;
+}
+
+div.options{
+	float: left;
+	width: 100px;
+	height: 400px;
+	margin-left: 70px;
+	clear: none;
+	z-index: 2;
+}
+
+div.options > label.a1 > input, div.options > label.a2 > input, div.options > label.a3 > input, div.options > label.b1 > input, div.options > label.b2 > input, div.options > label.b3 > input, div.options > label.c1 > input, div.options > label.c2 > input, div.options > label.c3 > input {
+	visibility: hidden;
+	margin-top: 30px;
+	display: block;
+	z-index: 2;
+}
+
+
+div.options > label.a1, div.options > label.b1, div.options > label.c1{
+	display: block;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+
+div.options > label.a2, div.options > label.a3, div.options > label.b2, div.options > label.b3, div.options > label.c2, div.options > label.c3{
+	margin-top: 30px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+
+
+/* Step2: option As */
+div.options > label.a1 > img{
+	background-image: url('../images/a1.jpg');
+	z-index: 2;
+}
+
+div.options > label.a2 > img{
+	background-image: url('../images/a2.jpg');
+	z-index: 2;
+}
+
+div.options > label.a3 > img{
+	background-image: url('../images/a3.jpg');
+	z-index: 2;
+}
+
+div.options > label.a1 > img, div.options > label.a2 > img, div.options > label.a3 > img{
+	display: inline-block;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	z-index: 2;
+}
+
+div.options > label.a1 > input:checked +img{
+	background-image: url('../images/a1.jpg');
+	z-index: 2;
+}
+
+div.options > label.a2 > input:checked +img{
+	background-image: url('../images/a2.jpg');
+	z-index: 2;
+}
+
+div.options > label.a3 > input:checked +img{
+	background-image: url('../images/a3.jpg');
+	z-index: 2;
+}
+
+div.options > label.a1 > input:checked +img, div.options > label.a2 > input:checked +img, div.options > label.a3 > input:checked +img{
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	border: 3px solid #ffff00;
+	z-index: 2;
+}
+
+
+/* Step3: option Bs */
+div.options > label.b1 > img{
+	background-image: url('../images/b1.jpg');
+	z-index: 2;
+}
+
+div.options > label.b2 > img{
+	background-image: url('../images/b2.jpg');
+	z-index: 2;
+}
+
+div.options > label.b3 > img{
+	background-image: url('../images/b3.jpg');
+	z-index: 2;
+}
+
+div.options > label.b1 > img, div.options > label.b2 > img, div.options > label.b3 > img{
+	display: inline-block;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	z-index: 2;
+}
+
+div.options > label.b1 > input:checked +img{
+	background-image: url('../images/b1.jpg');
+	z-index: 2;
+}
+
+div.options > label.b2 > input:checked +img{
+	background-image: url('../images/b2.jpg');
+	z-index: 2;
+}
+
+div.options > label.b3 > input:checked +img{
+	background-image: url('../images/b3.jpg');
+	z-index: 2;
+}
+
+div.options > label.b1 > input:checked +img, div.options > label.b2 > input:checked +img, div.options > label.b3 > input:checked +img{
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	border: 3px solid #ffff00;
+	z-index: 2;
+}
+
+
+/* Step4: option Cs */
+div.options > label.c1 > img{
+	background-image: url('../images/c1.jpg');
+	z-index: 2;
+}
+
+div.options > label.c2 > img{
+	background-image: url('../images/c2.jpg');
+	z-index: 2;
+}
+
+div.options > label.c3 > img{
+	background-image: url('../images/c3.jpg');
+	z-index: 2;
+}
+
+div.options > label.c1 > img, div.options > label.c2 > img, div.options > label.c3 > img{
+	display: inline-block;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	z-index: 2;
+}
+
+div.options > label.c1 > input:checked +img{
+	background-image: url('../images/c1.jpg');
+	z-index: 2;
+}
+
+div.options > label.c2 > input:checked +img{
+	background-image: url('../images/c2.jpg');
+	z-index: 2;
+}
+
+div.options > label.c3 > input:checked +img{
+	background-image: url('../images/c3.jpg');
+	z-index: 2;
+}
+
+div.options > label.c1 > input:checked +img, div.options > label.c2 > input:checked +img, div.options > label.c3 > input:checked +img{
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	border: 3px solid #ffff00;
+	z-index: 2;
+}
+
+button.btn{
+	display: inline;
+	font-family: "Garamond";
+	font-size: 14px;
+	font-weight: lighter;
+	background-color: rgba(88, 87, 75, 1);
+	color: #ffffff;
+	width: 60px;
+	height: 20px;
+	border: 1px solid rgba(88, 87, 75, 1);
+	z-index: 2;
+}
+
+button.optionBtn{
+	margin-top: 30px;
+	font-family: "Garamond";
+	font-size: 14px;
+	font-weight: lighter;
+	background-color: rgba(88, 87, 75, 1);
+	color: #ffffff;
+	width: 60px;
+	height: 20px;
+	border: 1px solid rgba(88, 87, 75, 1);
+	z-index: 2;
+}
+
+#canvas{
+
+	float: left;
+	position: relative;
+	width: 500px;
+	height: 400px;
+	/*background-color: #e8e8e8;*/	
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 2;
+}
+
+#allCards{
+	position: relative;
+	width: 900px;
+	min-height: 400px;
+	margin-left: 0px;
+	z-index: 2;
+}
+
+#oneCard{
+	display: inline-block;
+	width: 160px;
+	min-height: 170px;
+	margin: 3px;
+	padding: 15px;
+	background-color: #b8c03e;
+	z-index: 2;
+}
+
+#footer {
+	position: relative;
+	margin: 0 auto;
+	width: 1050px;
+	height: 35px;
+	padding-top: 2px;
+	font-family: "Garamond";
+	font-size: 12px;
+	font-weight: lighter;
+	color: #ffffff;
+	background-color: rgba(62, 192, 184, 0);
+	clear: both;
+	z-index: 2;
+
+}

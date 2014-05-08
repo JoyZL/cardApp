@@ -1,0 +1,14 @@
+<div class="info">
+<p class="greeting">What Other People Have Made</p>
+</div>
+
+<div id="allCards">
+
+{{#each cards}}
+<div id="oneCard">
+<li class='cardText'>Name: {{this.name}}</li>
+<li class='cardText'>City: {{this.city}}</li>
+<li class='cardImage'><img style="width: 150px; height: 120px;" src="/public/images/{{this.image}}"/></li>
+</div>
+{{/each}}
+</div>

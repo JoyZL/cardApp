@@ -1,0 +1,26 @@
+
+<form action='/step2' method='POST' id='step1form'>
+<div class="info">
+<p class="greeting">Hi : {{card.name}}</p>
+<input type='hidden' name='card_id' value = '{{card.id}}' />
+Your City:<input id='location' name='city'>
+<button type="submit" class="btn">Submit</button>
+</div>
+
+<div class="options"></div>
+<div id="canvas" style="width: 500px; height: 400px;"></div>
+
+
+</form>
+
+<script>
+
+$(document).ready(function(){
+
+initRaphael();
+
+weather();
+
+});
+
+</script> 

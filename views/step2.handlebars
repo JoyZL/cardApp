@@ -1,0 +1,48 @@
+
+
+<form method='POST' action='/step3' id='step2form'>
+<div class="info">
+<p class="greeting">Hi : {{card.name}} !</p>
+<div id="location">Your city is: </div>
+<input type='hidden' id='cardID' name='card_id' value='{{card.id}}' />
+</div>
+
+<script>
+window.locationInput = '{{card.city}}';
+</script>
+
+<div class="options">
+<p class="pickOption">Pick one</p>
+<label class="a1">
+<input id='radio1' type='radio' name='background' value='a1'/>
+<img />
+</label>
+
+<label class="a2">
+<input id='radio2' type='radio'  name='background' value='a2' />
+<img />
+</label>
+
+<label class="a3">
+<input id='radio3' type='radio'  name='background' value='a3' />
+<img />
+</label>
+
+<button class="optionBtn">Select</button>
+</div>
+
+<div id="canvas" style="width: 500px; height: 400px;"></div>
+
+</form>
+
+<script>
+
+$(document).ready(function(){
+
+initRaphael();
+
+showStep2();
+
+});
+
+</script> 
